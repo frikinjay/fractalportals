@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "fractalportals",
+  "version": "${version}",
+
+  "name": "FractalPortals",
+  "description": "Fractal Portals adds horizontal and vertical variants of the Nether and End Portals respectively.",
+  "authors": [
+    "frikinjay"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/fractalportals/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.frikinjay.fractalportals.FractalPortalsMod"
+    ]
+  },
+  "mixins": [
+    ""
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
