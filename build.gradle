@@ -17,6 +17,13 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven {url = "https://maven.kyrptonaught.dev"}
+	maven { url = "https://jitpack.io" }
+	maven { url = "https://www.cursemaven.com" }
+	maven { url = "https://maven.terraformersmc.com/releases/" }
+	flatDir {
+		dirs '/run/mods'
+	}
+
 }
 
 dependencies {
@@ -32,6 +39,14 @@ dependencies {
 	// You may need to force-disable transitiveness on them.
 	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta45-1.17'
      include 'net.kyrptonaught:customportalapi:0.0.1-beta45-1.17'
+
+	// The Aether
+	modCompileOnly files('run/mods/aether-1.17.1-1.6.0.jar')
+	//Incubus Core
+	modCompileOnly 'com.github.devs-immortal:incubus-core:1.6.1'
+	//Modmenu
+	modCompileOnly 'com.terraformersmc:modmenu:2.0.9'
+
 
 }
 
