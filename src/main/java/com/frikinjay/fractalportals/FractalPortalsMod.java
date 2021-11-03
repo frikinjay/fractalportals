@@ -1,12 +1,10 @@
 package com.frikinjay.fractalportals;
 
+import com.frikinjay.fractalportals.init.PortalsInit;
+import com.frikinjay.fractalportals.init.optionalaether.AetherPortalBlue;
+import com.frikinjay.fractalportals.init.optionalaether.AetherPortalInit;
 import net.fabricmc.api.ModInitializer;
-
-import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.Items;
-import net.minecraft.util.Identifier;
-
+import net.fabricmc.loader.api.FabricLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,13 +20,13 @@ public class FractalPortalsMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-		CustomPortalBuilder.beginPortal()
-		    .frameBlock(Blocks.CRYING_OBSIDIAN)
-		    .destDimID(new Identifier("the_nether"))
-		    .tintColor(131,66,184)
-		    .flatPortal()
-		    .registerPortal();
+		PortalsInit.registerPortals();
 
+		if(FabricLoader.getInstance().isModLoaded("the_aether"))
+		{
+			AetherPortalBlue.init();
+			AetherPortalInit.registerAetherPortal();
+		}
 
 		LOGGER.info("Vertical Portals YAY!");
 	}
