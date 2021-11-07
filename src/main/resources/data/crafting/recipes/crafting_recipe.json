@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#E#",
+        "EZE",
+        "#E#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:end_stone"
+        },
+        "E": {
+            "item": "minecraft:ender_pearl"
+        },
+        "Z": {
+            "item": "minecraft:ender_eye"
+        }
+    },
+    "result": {
+        "item": "fractalportals:ender_frame",
+        "count": 4
+    },
+    "group": "fractalportals"
+}
