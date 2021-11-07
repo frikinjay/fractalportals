@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "minecraft:block/obsidian",
+    "north": "fractalportals:block/end_fractal",
+    "south": "fractalportals:block/end_fractal",
+    "east": "fractalportals:block/end_fractal",
+    "west": "fractalportals:block/end_fractal",
+    "up": "fractalportals:block/end_fractal",
+    "down": "fractalportals:block/end_fractal"
+  }
+}
