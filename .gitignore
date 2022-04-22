@@ -1,0 +1,9 @@
+
+*.mca
+*.dat_old
+*.dat
+/.git
+/.gradle
+/.idea
+/build
+/run

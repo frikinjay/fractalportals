@@ -21,6 +21,7 @@ repositories {
 	maven { url = "https://jitpack.io" }
 	maven { url = "https://www.cursemaven.com" }
 	maven { url = "https://maven.terraformersmc.com/releases/" }
+	maven { url "https://github.com/ricksouth/serilum-forge-maven/raw/maven/" }
 	flatDir {
 		dirs '/run/mods'
 	}
@@ -42,11 +43,13 @@ dependencies {
      include "net.kyrptonaught:customportalapi:${project.customportalapi_version}"
 
 	// The Aether
-	modCompileOnly files('run/mods/paradise-lost-1.6.5.3+1.18.1.jar')
+	modCompileOnly files('run/mods/paradise-lost-1.6.8+1.18.2.jar')
 	//Incubus Core
 	modCompileOnly "com.github.devs-immortal:incubus-core:${project.incubus_version}"
 	//Modmenu
 	modCompileOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
+	//Collective
+	//modCompileOnly "com.natamus.collective:collective-fabric:1.18.x-4.9"
 
 
 }
