@@ -1,5 +1,9 @@
 {
   "item.fractalportals.ender_frame": "Ender Frame",
 
-  "block.fractalportals.ender_frame": "Ender Frame"
+  "block.fractalportals.ender_frame": "Ender Frame",
+  
+  "block.fractalportals.end_fractal": "End Fractal",
+  
+  "block.customportalapi.customportalblock": "Portal"
 }
